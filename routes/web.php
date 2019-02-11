@@ -16,9 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return 'basket';
+    return view('test');
 });
-
 
 Auth::routes();
 
