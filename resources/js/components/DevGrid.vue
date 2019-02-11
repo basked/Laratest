@@ -6,23 +6,21 @@
         <dx-group-panel :visible="true"/>
         <dx-search-panel
                 :visible="true"
-                :highlight-case-sensitive="true"
-        />
+                :highlight-case-sensitive="true"/>
         <dx-grouping :auto-expand-all="false"/>
 
     </dx-data-grid>
-
-
 </template>
 <script>
 
-    import {DxDataGrid,  DxSearchPanel, DxGrouping, DxGroupPanel} from 'devextreme-vue/data-grid';
+    import {DxDataGrid,  DxSearchPanel, DxGrouping, DxGroupPanel, DxColumn} from 'devextreme-vue/data-grid';
     import { customers } from './data_grid.js';
 
     export default {
         components: {
             DxDataGrid,
             DxSearchPanel,
+            DxColumn,
             DxGrouping,
             DxGroupPanel
         },
